@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/Ionicons';
+import colors from '../themes/Colors';
 
 const logo = require('../assets/images/e_logo.png');
 
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10,
     paddingTop: 25,
-    backgroundColor: '#536f66',
+    backgroundColor: colors.themeColor,
   },
   logo: {
     width: 50,

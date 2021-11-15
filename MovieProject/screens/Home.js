@@ -74,56 +74,32 @@ const Home = ({navigation}) => {
         )}
 
         {/* Popular Movies */}
-        {popularMovies ? (
-          <View style={styles.sliderContainer}>
-            <List
-              title="Popular Movies"
-              content={popularMovies}
-              navigation={navigation}
-            />
-          </View>
-        ) : (
-          <ActivityIndicator size="large" />
-        )}
+        <List
+          title="Popular Movies"
+          content={popularMovies}
+          navigation={navigation}
+        />
 
         {/* Popular Tvs */}
-        {popularTvs ? (
-          <View style={styles.sliderContainer}>
-            <List
-              title="Popular Tv Shows"
-              content={popularTvs}
-              navigation={navigation}
-            />
-          </View>
-        ) : (
-          <ActivityIndicator size="large" />
-        )}
+        <List
+          title="Popular Tv Shows"
+          content={popularTvs}
+          navigation={navigation}
+        />
 
         {/* Family Movies */}
-        {familyMovies ? (
-          <View style={styles.sliderContainer}>
-            <List
-              title="Family Movies"
-              content={familyMovies}
-              navigation={navigation}
-            />
-          </View>
-        ) : (
-          <ActivityIndicator size="large" />
-        )}
+        <List
+          title="Family Movies"
+          content={familyMovies}
+          navigation={navigation}
+        />
 
         {/* Documentary Movies */}
-        {documentaryMovies ? (
-          <View style={styles.sliderContainer}>
-            <List
-              title="Documentary Movies"
-              content={documentaryMovies}
-              navigation={navigation}
-            />
-          </View>
-        ) : (
-          <ActivityIndicator size="large" />
-        )}
+        <List
+          title="Documentary Movies"
+          content={documentaryMovies}
+          navigation={navigation}
+        />
       </ScrollView>
     </React.Fragment>
   );
@@ -134,7 +110,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 30,
+    marginBottom: 50,
   },
   sliderStyle: {
     height: 0,

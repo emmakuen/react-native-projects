@@ -12,7 +12,7 @@ import StarRating from 'react-native-star-rating';
 import dateFormat from 'dateformat';
 import {getMovie} from '../services/services';
 import PlayButton from '../components/PlayButton';
-import {IMAGE_PATH} from '../constants';
+import {IMAGE_PATH, DATE_FORMAT} from '../constants';
 import CustomModal from '../components/CustomModal';
 const placeholderImg = require('../assets/images/placeholder.png');
 const dimensions = Dimensions.get('screen');
@@ -91,7 +91,7 @@ const Detail = ({route, navigation}) => {
               {movieDetail.release_date && (
                 <Text style={styles.releaseDate}>
                   Release Date:{' '}
-                  {dateFormat(movieDetail.release_date, 'mmmm dS, yyyy')}
+                  {dateFormat(movieDetail.release_date, DATE_FORMAT)}
                 </Text>
               )}
             </View>
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 20,
   },
   image: {
     height: imgHeight,

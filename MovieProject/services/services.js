@@ -60,6 +60,6 @@ export const getMovie = async movieId => {
 
 // Search for Movie or TV by Keyword
 export const searchMovieTv = async (query, type) => {
-  const res = await movies.get(`/search/${type}?api_key=${KEY}&query:${query}`);
+  const res = await movies.get(`/search/${type}?api_key=${KEY}&query=${query}`);
   return res.data.results;
 };

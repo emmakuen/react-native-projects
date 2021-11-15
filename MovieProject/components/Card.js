@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     height: 200,
     alignItems: 'center',
+    marginBottom: 20,
   },
   image: {
     resizeMode: 'cover',
